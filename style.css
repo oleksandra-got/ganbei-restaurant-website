@@ -151,8 +151,27 @@ nav a.active{
 }
 
 .language-selector select option{
-    background-color: #073541;
+    background-color: #122737;
     color: white;
+}
+
+.reservation-modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    background-color: #122737;
+}
+
+.reservation-modal.active{
+    display: flex;
+}
+
+.reservation-box{
+    width: 90%;
+    max-width: 550px;
 }
 
 .reservation-grid{
@@ -162,3 +181,36 @@ nav a.active{
     gap: 1rem 2rem;
 }
 
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #F8E5CF;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+}
+
+.datetime-group{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.date-time > div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.date-group label{
+    margin-bottom: 0.5rem;
+}
