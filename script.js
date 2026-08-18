@@ -1,6 +1,15 @@
 console.log("Ganbei is working!");
 
-const reservationForm = document.querySelector("#reservation-modal");
-const bookbtn = document.querySelector(".btn"); //"BOOK A TABLE" button
-const closebtn = document.querySelector(".close-btn"); //X button
-const form = document.querySelector(reservation-form);
+const openModalBtn = document.getElementById('openModalBtn');
+const reservationForm = document.querySelector(".reservation-modal");
+const closeButton = document.querySelector(".close-btn");
+const form = document.querySelector("#reservation-form");
+
+openModalBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    reservationForm.classList.add("active");
+})
+
+closeButton.addEventListener("click", function() {
+    reservationForm.classList.remove("active");
+})
