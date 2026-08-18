@@ -166,7 +166,7 @@ nav a.active{
 }
 
 .reservation-modal.active{
-    display: flex;
+    display: block;
 }
 
 .reservation-box{
