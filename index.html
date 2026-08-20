@@ -27,6 +27,7 @@
                     <option value="ge">GE</option>
                 </select>
             </div>
+        </div>    
     </header>
     <section class="hero">
         <img src="./media/logo.png" alt="Ganbei Big Logo" class="hero-logo">
@@ -41,12 +42,11 @@
                 <div class="reservation-grid">
                     <!---Linie 1:Name/Guests-->
                     <div class="form-group">
-                     <label for="name">Name:</label>
-                     <input type="text" id="name" name="name" required>
+                     <input type="text" id="name" name="name" placeholder="Name*" required>
                     </div>
                 <div class="form-group">
                     <select id="guests" name="guests" required>
-                    <option value="">Amount of people</option>
+                    <option value="" disabled selected>Amount of people</option>
                     <option value="1">1 person</option>
                     <option value="2">2 people</option>
                     <option value="3">3 people</option>
@@ -57,16 +57,12 @@
                 
                 <!---Linie 2:Phone/Date.Time-->
                 <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone*" required>
                 </div>
                 <div class="form-group datetime-group">
-                    <label for="date">Date:</label>
                     <input type="date" id="date" name="date" required>
-
-                    <label for="time">Time</label>
                 <select id="time" name="time" required>
-                    <option value="">Choose time</option>
+                    <option value="">Time</option>
                     <option value="18:00">18:00</option>
                     <option value="18:30">18:30</option>
                     <option value="19:00">19:00</option>
@@ -77,9 +73,8 @@
 
                 <!---Linie 3:Location/Requests-->
                 <div class="form-group">
-                    <label for="location">Location</label>
                 <select id="location" name="location" required>
-                    <option value="">Choose a restoraunt</option>
+                    <option value="" disabled selected>Choose a restaraunt</option>
                     <option value="akropole-riga">Akropole Riga</option>
                     <option value="galeria-riga">Galeria Riga</option>
                     <option value="origo-riga">Origo Riga</option>
@@ -87,8 +82,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="special-requests">Special Requests:</label>
-                    <textarea id="special-requests" name="special-requests"></textarea>
+                    <textarea id="special-requests" name="special-requests" placeholder="Special requests"></textarea>
                 </div>
                 </div>
                 
