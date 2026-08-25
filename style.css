@@ -49,11 +49,12 @@ body{
 }
 
 .hero-logo{
-    width: 75rem;
+    width: 78rem;
     height: auto;
     margin: -8rem auto 2.5rem;
     padding-bottom: 6rem;
-    transform: translateY(7rem);
+    transform: translate(-1.5rem, 4rem);
+    
     
 }
 
@@ -64,6 +65,15 @@ body{
 
 .header .logo:hover{
     transform: scale(1.1);
+}
+
+.hero .hero-subtitle{
+    font-family: 'Allenoire', serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
 }
 
 .hero{
@@ -108,18 +118,10 @@ nav a.active{
     margin-left: 2rem;
 }
 
-.hero .hero-subtitle{
-    font-family: 'Allenoire', serif;
-    font-size: 4rem;
-    line-height: 1.2;
-    font-weight: 400;
-    margin-bottom: 4rem;
-}
-
 .btn{
     display: inline-block;
     width: max-content;
-    padding: 1.4rem 8.5rem;
+    padding: 1.4rem 7.5rem;
     background-color: #FF4F04;
     border-radius: 1.5rem;
     font-size: 1.8rem;
@@ -155,6 +157,8 @@ nav a.active{
     color: white;
 }
 
+/*reservation*/
+
 .reservation-modal{
     display: none;
     position: fixed;
@@ -162,16 +166,22 @@ nav a.active{
     z-index: 100;
     align-items: center;
     justify-content: center;
-    background-color: #122737;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.16);
 }
 
 .reservation-modal.active{
-    display: block;
+    display: flex;
 }
 
 .reservation-box{
-    width: 90%;
-    max-width: 550px;
+    background-color: #122737;
+    width: 1100px;
+    height: 500px;
+    padding: 40px;
+    position: relative;
+    border-radius: 16px;
+    border: 0.2rem solid #D87E00;
 }
 
 .reservation-grid{
@@ -180,6 +190,20 @@ nav a.active{
     margin-bottom: 2rem;
     gap: 1rem 2rem;
 }
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    background-color:#F8E5CF;
+    color:#C37200;
+    padding: 0.8rem 1rem;
+    border: 1px solid #F8E5CF;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+
+
 
 .form-group{
     display: flex;
@@ -193,11 +217,6 @@ nav a.active{
     font-weight: 500;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea{
-
-}
 
 .datetime-group{
     display: flex;
@@ -213,4 +232,20 @@ nav a.active{
 
 .date-group label{
     margin-bottom: 0.5rem;
+}
+
+.submit-btn{
+    display: block;
+    width: max-content;
+    padding: 1.4rem 7.5rem;
+    background-color: #FF4F04;
+    border-radius: 1.5rem;
+    border: none;
+    font-size: 1.8rem;
+    color: #070000;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 1rem auto 0 auto;
 }
