@@ -54,8 +54,6 @@ body{
     margin: -8rem auto 2.5rem;
     padding-bottom: 6rem;
     transform: translate(-1.5rem, 4rem);
-    
-    
 }
 
 .header .logo{
@@ -100,7 +98,7 @@ nav a{
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover, nav a.active{
+nav a:hover {
     color: #D87E00;
     border-bottom: 3px solid #D87E00;
 }
@@ -180,7 +178,7 @@ nav a.active{
     height: 500px;
     padding: 40px;
     position: relative;
-    border-radius: 16px;
+    border-radius: 18px;
     border: 0.2rem solid #D87E00;
 }
 
@@ -196,13 +194,12 @@ nav a.active{
 .form-group textarea{
     background-color:#F8E5CF;
     color:#C37200;
-    padding: 0.8rem 1rem;
+    padding: 1rem 1.2rem;
     border: 1px solid #F8E5CF;
     border-radius: 0.8rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: 0.3s ease;
 }
-
 
 
 .form-group{
@@ -247,5 +244,38 @@ nav a.active{
     font-weight: 600;
     transition: 0.3s ease;
     cursor: pointer;
-    margin: 1rem auto 0 auto;
+    margin: 7rem auto 0 auto;
+}
+
+.submit-btn:hover{
+    background-color: #F88656;
+    color: rgb(252, 251, 250);
+    transform: scale(1.1) translateY(-5px);
+}
+
+.modal-title {
+    font-family: 'Allenoire', serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    margin-top: -1rem;
+    color:#D87E00;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    background: transparent;
+    color:#fff;
+    right: 2rem;
+    top: 0.5rem;
+    width: 35px;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #D87E00;
 }
