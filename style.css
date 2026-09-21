@@ -15,11 +15,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-header{
+header {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -32,13 +32,13 @@ header{
     z-index: 10;
 }
 
-.header .logo, header img{
+.header .logo, header img {
     height: 5rem;
     width: auto;
     cursor: pointer;
 }
 
-body{
+body {
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("./media/backgrphoto.png");
     background-size: cover;
     min-height: 100vh;
@@ -48,7 +48,7 @@ body{
     color: #fff;
 }
 
-.hero-logo{
+.hero-logo {
     width: 78rem;
     height: auto;
     margin: -8rem auto 2.5rem;
@@ -56,16 +56,16 @@ body{
     transform: translate(-1.5rem, 4rem);
 }
 
-.header .logo{
+.header .logo {
     height: 5rem;
     width: auto;
 }
 
-.header .logo:hover{
+.header .logo:hover {
     transform: scale(1.1);
 }
 
-.hero .hero-subtitle{
+.hero .hero-subtitle {
     font-family: 'Allenoire', serif;
     font-size: 4rem;
     line-height: 1.2;
@@ -74,7 +74,7 @@ body{
     margin-top: -4rem;
 }
 
-.hero{
+.hero {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -83,13 +83,13 @@ body{
     padding-top: 8rem;
 }
 
-nav{
+nav {
     display: flex;
     gap: 4rem;
     margin-left: auto;
 }
 
-nav a{
+nav a {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
@@ -103,20 +103,20 @@ nav a:hover {
     border-bottom: 3px solid #D87E00;
 }
 
-nav a.active{
+nav a.active { 
     color: #A34F12;
     border-bottom: 3px solid #A34F12;
     transform: scale(0.98);
 }
 
-.header-actions{
+.header-actions {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-left: 2rem;
 }
 
-.btn{
+.btn {
     display: inline-block;
     width: max-content;
     padding: 1.4rem 7.5rem;
@@ -130,15 +130,16 @@ nav a.active{
     cursor: pointer;
     margin-top: -3rem;
     margin: 1rem auto 0 auto;
+    border: none;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #F88656;
     color: rgb(252, 251, 250);
     transform: scale(1.1) translateY(-5px);
 }
 
-.language-selector select{
+.language-selector select {
     background: transparent;
     border: none;
     outline: none;
@@ -150,14 +151,14 @@ nav a.active{
     cursor: pointer;
 }
 
-.language-selector select option{
+.language-selector select option {
     background-color: #122737;
     color: white;
 }
 
 /*reservation*/
 
-.reservation-modal{
+.reservation-modal {
     display: none;
     position: fixed;
     inset: 0;
@@ -168,11 +169,11 @@ nav a.active{
     background-color: rgba(0,0,0,0.16);
 }
 
-.reservation-modal.active{
+.reservation-modal.active {
     display: flex;
 }
 
-.reservation-box{
+.reservation-box {
     background-color: #122737;
     width: 1100px;
     height: 500px;
@@ -182,7 +183,7 @@ nav a.active{
     border: 0.2rem solid #D87E00;
 }
 
-.reservation-grid{
+.reservation-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 2rem;
@@ -191,7 +192,7 @@ nav a.active{
 
 .form-group input,
 .form-group select,
-.form-group textarea{
+.form-group textarea {
     background-color:#F8E5CF;
     color:#C37200;
     padding: 1rem 1.2rem;
@@ -202,12 +203,12 @@ nav a.active{
 }
 
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
 }
 
-.form-group label{
+.form-group label {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #F8E5CF;
@@ -215,23 +216,23 @@ nav a.active{
 }
 
 
-.datetime-group{
+.datetime-group {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.date-time > div{
-    display: flex;
-    flex-direction: column;
+.datetime-group input {
     flex: 1;
+    width: 100%;
+    min-width: 0;
 }
 
 .date-group label{
     margin-bottom: 0.5rem;
 }
 
-.submit-btn{
+.submit-btn {
     display: block;
     width: max-content;
     padding: 1.4rem 7.5rem;
@@ -259,7 +260,7 @@ nav a.active{
     line-height: 1.2;
     font-weight: 400;
     margin-bottom: 4rem;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
     color:#D87E00;
     text-align: center;
 }
@@ -279,3 +280,5 @@ nav a.active{
 .close-btn:hover {
     color: #D87E00;
 }
+
+
